@@ -1,0 +1,42 @@
+div
+{
+	position: relative;
+	left: 200px;
+	top: 65px
+}
+
+div#hh
+{
+	font-family: "Arial Black";
+}
+
+span#scl
+{
+	color: rgb(120, 120, 120);
+	position: relative;
+	left: 28px;
+	top: 3px;
+	letter-spacing: 36px;
+	font-size: 20px;
+	font-family: "Arial";
+}
+
+span#br
+{
+	color: white;
+	background-color: red;
+	border-bottom : 2px solid rgb(120, 120, 120);
+	font-size: 35px;
+}
+
+span#ch
+{
+	font-size: 35px;
+	color: red;
+}
+
+span#ac
+{
+	font-size: 35px;
+	border-bottom : 2px solid rgb(120, 120, 120);
+}
