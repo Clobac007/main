@@ -1,0 +1,90 @@
+div
+{
+	font-family: sans-serif;
+}
+
+.box
+{
+	background: #0081ff;
+	color: #ffffff;
+}
+
+.firstr
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.skill
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.about_me
+{
+	font-weight: bold;
+	font-size: 25px;
+	width: 280px;
+}
+
+#titrea
+{
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.about_me2
+{
+	font-size: smaller;
+}
+
+#ame2p
+{
+	text-align: justify;
+	width: 377px;
+}
+
+img
+{
+	width: 60px;
+	height: 60px;
+}
+
+.skill
+{
+	flex-direction: row;
+	flex-basis: 100%;
+	background: #0081aa;
+}
+
+.first
+{
+	width: 180px;
+	font-size: 12px;
+}
+
+.second
+{
+	width: 180px;
+	font-size: 12px;
+}
+
+.third
+{
+	width: 200px;
+	font-size: 12px;
+}
+
+#titre
+{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.footer
+{
+	text-align: center;
+}
