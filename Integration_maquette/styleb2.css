@@ -50,44 +50,47 @@ div.about_me h1
 	width: 377px;
 }
 
-img
-{
-	width: 60px;
-	height: 60px;
-}
-
 .skill
 {
 	flex-direction: row;
-	flex-basis: 100%;
+	gap: 25px;
 	background: #0081aa;
+}
+
+.skill img
+{
+	margin-top: 22px;
 }
 
 .first
 {
-	width: 180px;
-	font-size: 12px;
+	width: 220px;
+	font-size: 15px;
 }
 
 .second
 {
-	width: 180px;
-	font-size: 12px;
+	width: 220px;
+	font-size: 15px;
 }
 
 .third
 {
-	width: 200px;
-	font-size: 12px;
+	width: 220px;
+	font-size: 15px;
 }
 
 #titre
 {
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: bold;
 }
 
-.footer
+.network
 {
-	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
 }
