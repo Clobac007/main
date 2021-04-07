@@ -1,0 +1,154 @@
+/* Définitions des polices personnalisées */
+
+
+
+
+
+
+
+
+/* Eléments principaux de la page */
+
+body {
+
+    background-color: #181818;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+#bloc_page {
+
+    width: 900px;
+    margin: auto;
+}
+
+section h1, nav a {
+
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/*Header*/
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+#titre_principal {
+
+    display: flex;
+    flex-direction: column;
+}
+   
+#logo {
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: #fff;
+}
+
+/* Navigation */
+
+nav ul {
+
+    list-style-type : none;
+    display: flex;
+}
+
+nav li {
+
+    margin-right: 40px;
+    
+}
+
+nav a {
+
+    font-size: 0.8em;
+    color: #fff;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover {
+
+    color: #84817a;
+}
+
+/* Bouton buy */ 
+
+.btn_jaune {
+
+    position: absolute;
+    right: 5px;
+    top: 2em;
+    border: 1px solid #f1c40f;
+    border-radius: 12px;
+    box-shadow: 1px 1px 1px #f1c40f;
+    opacity: 1;
+    font-size: 12px;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+/* Corps */
+
+section {
+
+    margin-top: 20%;
+    color: #fff;
+}
+
+article {
+
+    text-align: justify;
+}
+
+/* #hi_there */
+
+
+#my_name {
+
+    font-size: 35px;
+}
+
+span {
+
+    color: #0984e3;
+}
+
+#i_m {
+
+    font-size: 25px;
+}
+
+p {
+
+    color: #84817a;
+}
+
+/* Bouton about */
+
+.btn_about {
+
+    font-size: 12px;
+    text-transform: uppercase;
+    position: absolute;
+    box-sizing: border-box;
+    width: 6%;
+    height: 4%;
+    border: 2px solid #84817a;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px #84817a;
+    border-width: 0.5px;
+    opacity: 1;
+    text-align: center;
+    padding: 6px 8px 0px 8px;
+    color: #fff;
+    text-decoration: none;
+}
