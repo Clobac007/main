@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cambay:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.blog {
+
+    padding-top: 80px;
+}
+
+.blog h2 {
+
+    padding-top: 30px;
+    font-family: 'Montserrat Black', sans-serif;
+    font-size: 42px;
+}
+
+.blog p {
+
+    font-family: 'Cambay', sans-serif;
+}
+
+.quote {
+
+    background-color: #007efa;
+}
+
+.date {
+
+    font-size: 16px;
+    font-family: 'Montserrat ExtraBold', sans-serif;
+    padding-top: 35px;
+    text-align: center;
+    color: #fff;
+}
+
+.citation {
+
+    font-size: 24px;
+    font-family: 'Myriad Pro Regular', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.author {
+
+    font-size: 18px;
+    color: #ff0;
+    font-family: 'Cambray Bold', sans-serif;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.gallery {
+
+    background-image: url('img/gallery.png') ;
+    background-size: cover;
+    padding-left: 50px;
+}
+
+.gallery p {
+
+    width: 350px;
+}
+
+.dategallery {
+
+    font-family: 'Montserrat Black', sans-serif;
+    font-size: 20px;
+    color: #8799a3;
+    padding-top: 100px;
+    font-weight: bold;
+}
+
+.titlegallery {
+
+    font-family: 'Montserrat Black', sans-serif;
+    font-size: 32px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.descriptiongallery {
+
+    font-family: 'Cambray Regular', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.gallerylink {
+
+    margin-top: 40px;
+    background-color: #fefb30;
+    padding: 20px;
+    border-radius: 50px;
+    font-family: "Montserrat Bold";
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.linkspace {
+
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+
+.standardformat {
+
+    background-image: url('img/standardformat.png');
+    background-size: cover;
+    padding-left: 40px;
+}
+
+.datestandardformat {
+
+    padding-top: 40px;
+    font-size: 16px;
+    font-family: "Montserrat ExtraBold", sans-serif;
+    color: #bbc7cd;
+}
+
+.textstandardformat {
+
+    font-family: "Montserrat Black", sans-serif;
+    font-size: 24px;
+    color: black;
+    padding-bottom: 50px;
+}
+
+.videoformat {
+
+    background-image: url('img/videoformat.jpeg');
+    background-size: cover;
+}
+
+.videoformatdate {
+
+    font-size: 16px;
+    color: #fff;
+    font-family: "Montserrat ExtraBold";
+    text-align: center;
+    padding-top: 50px;
+}
+
+.videoformattext {
+
+    font-family: "Montserrat Black";
+    font-size: 24px;
+    padding-top: 25px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.standartwhimg {
+
+    background-color: #fff;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.datestandartwhimg {
+
+    font-size: 16px;
+    font-family: "Montserrat ExtraBold";
+    color: #bbc7cd;
+}
+
+.titlestandartwhimg {
+
+    font-weight: bold;
+    color: black;
+    font-family: "Montserrat Black";
+    font-size: 22px;
+}
+
+.textstandartwhimg {
+
+    font-size: 16px;
+    font-family: "Cambay Regular";
+    color: #636363;
+}
+
+.viewallpost {
+
+    background-color: #e91d62;
+    color: white;
+}
+
+.viewallpost a {
+
+    color: white;
+}
+
+.viewallposttext {
+
+    padding-bottom: 85px;
+    padding-top: 85px;
+    text-align: center;
+}
