@@ -3,21 +3,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+section.blog
+{
+	background: #cfcfcf;
+}
+
 .blog {
 
     padding-top: 80px;
 }
 
+.blog h1
+{
+	color: #858585;
+	font-size: 25px;
+}
+
 .blog h2 {
 
     padding-top: 30px;
-    font-family: 'Montserrat Black', sans-serif;
+	padding-bottom: 20px;
+    font-family: Montserrat;
+	font-weight: bolder;
     font-size: 42px;
 }
 
 .blog p {
 
     font-family: 'Cambay', sans-serif;
+}
+
+.st 
+{
+	color: #858585;
+	font-family: Montserrat;
+	font-size: 20px;
 }
 
 .quote {
@@ -54,9 +74,9 @@
 
 .gallery {
 
-    background-image: url('img/gallery.png') ;
-    background-size: cover;
-    padding-left: 50px;
+    background-image: url('pictures/p1b5gallery.png') ;
+    background-size: 100%;
+    padding-left: 75px;
 }
 
 .gallery p {
@@ -109,8 +129,8 @@
 
 .standardformat {
 
-    background-image: url('img/standardformat.png');
-    background-size: cover;
+    background-image: url('pictures/p2b5standardformat.png');
+    background-size: 100%;
     padding-left: 40px;
 }
 
@@ -132,7 +152,7 @@
 
 .videoformat {
 
-    background-image: url('img/videoformat.jpeg');
+    background-image: url('pictures/p3b5videoformat.jpeg');
     background-size: cover;
 }
 

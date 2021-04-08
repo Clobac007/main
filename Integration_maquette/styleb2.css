@@ -5,10 +5,10 @@
 
 div
 {
-	font-family: sans-serif;
+	font-family: Cambay;
 }
 
-.box
+.bloc_n2
 {
 	background: #0081ff;
 	color: #ffffff;
@@ -20,6 +20,7 @@ div
 	flex-flow: row wrap;
 	justify-content: center;
 	column-gap: 45px;
+	padding-top: 90px;
 }
 
 .skill
@@ -32,70 +33,100 @@ div
 
 div.about_me p
 {
-	font-family: "Arial Black";
-	font-size: 20px;
-	width: 280px;
+	font-family: Montserrat;
+	font-weight: bolder;
+	font-size: 35px;
+	width: 450px;
 }
 
 div.about_me h1
 {
 	font-weight: normal;
-	font-size: 18px;
+	font-size: 28px;
 }
 
-.about_me2
+div.about_me2
 {
-	font-size: smaller;
+	padding-bottom: 55px;
 }
 
-#ame2p
+.about_me2 p
+{
+	font-family: Cambay;
+	font-size:20px;
+	margin-top: 15px;
+}
+
+.about_me2 #ame2p
 {
 	margin-top: 67px;
 	text-align: justify;
-	width: 377px;
+	width: 580px;
+	font-family: Cambay;
+	font-size:20px;
 }
 
 .skill
 {
-	flex-direction: row;
+	flex-flow: row wrap;
 	gap: 25px;
-	background: #0081aa;
+	background: #0073e6;
+	padding-top: 65px;
+	padding-bottom: 75px;
+}
+
+.skill #titre
+{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Montserrat;
 }
 
 .skill img
 {
-	margin-top: 22px;
+	margin-top: 8px;
 }
 
 .first
 {
-	width: 220px;
-	font-size: 15px;
+	width: 250px;
+	font-size: 16px;
+	font-family: Cambay;
 }
 
 .second
 {
-	width: 220px;
-	font-size: 15px;
+	width: 250px;
+	font-size: 16px;
+	font-family: Cambay;
 }
 
 .third
 {
-	width: 220px;
-	font-size: 15px;
-}
-
-#titre
-{
-	font-size: 20px;
-	font-weight: bold;
+	width: 250px;
+	font-size: 16px;
+	font-family: Cambay;
 }
 
 .network
 {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	flex-flow: row wrap;
 	align-items: center;
+	padding-left: 35px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+.network p
+{
+	margin-top: 15px;
+}
+
+.network #token
+{
+	display: flex;
+	flex-flow: row wrap;
 	gap: 25px;
+	margin-left: 125px;
 }

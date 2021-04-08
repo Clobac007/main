@@ -1,40 +1,34 @@
 /* Définitions des polices personnalisées */
-
-
-
-
-
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cambay:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 /* Eléments principaux de la page */
 
 body {
 
     background-color: #181818;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
-#bloc_page {
+#bloc_n1 {
 
-    width: 900px;
-    margin: auto;
+	padding: 50px 30px 250px 30px;
+	font-family: Cambay;
+	background-color: #181818;
 }
 
-section h1, nav a {
+nav a {
 
-    font-family: Dayrom, serif;
     font-weight: normal;
-    text-transform: uppercase;
 }
 
 /*Header*/
 
-header {
+.hb1 {
 
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
 }
 
 #titre_principal {
@@ -51,18 +45,21 @@ header {
     color: #fff;
 }
 
+div#logo h1
+{
+	font-weight: bold;
+	font-size: 28px;
+}
+
 /* Navigation */
 
 nav ul {
 
     list-style-type : none;
     display: flex;
-}
-
-nav li {
-
-    margin-right: 40px;
-    
+	gap: 30px;
+	font-size: 20px;
+	font-family: Montserrat;
 }
 
 nav a {
@@ -82,54 +79,58 @@ nav a:hover {
 
 .btn_jaune {
 
-    position: absolute;
-    right: 5px;
-    top: 2em;
     border: 1px solid #f1c40f;
-    border-radius: 12px;
+    border-radius: 18px;
     box-shadow: 1px 1px 1px #f1c40f;
     opacity: 1;
     font-size: 12px;
-    text-align: center;
-    padding: 3px 8px 0px 8px;
+    padding: 10px 25px 10px 25px;
     color: #f1c40f;
     text-decoration: none;
+	font-family: Montserrat;
+	font-weight: bold;
 }
 
 /* Corps */
 
-section {
+section#bloc_n1 {
 
-    margin-top: 20%;
     color: #fff;
 }
 
-article {
-
-    text-align: justify;
+div#hi_there
+{
+	padding-top: 225px;
 }
 
-/* #hi_there */
-
+#hi {
+	font-size: 28px;
+}
 
 #my_name {
 
-    font-size: 35px;
+    font-size: 45px;
+	font-family:  Montserrat;
+	font-weight: bolder;
 }
 
-span {
+#my_name span {
 
     color: #0984e3;
 }
 
-#i_m {
+#job {
 
-    font-size: 25px;
+    font-size: 30px;
+	font-family:  Montserrat;
 }
 
-p {
+p#prgh {
 
+	font-size: 18px;
+	width: 450px;
     color: #84817a;
+	margin-bottom: 75px;
 }
 
 /* Bouton about */
@@ -137,18 +138,14 @@ p {
 .btn_about {
 
     font-size: 12px;
+	font-weight: bold;
     text-transform: uppercase;
-    position: absolute;
-    box-sizing: border-box;
-    width: 6%;
-    height: 4%;
-    border: 2px solid #84817a;
-    border-radius: 15px;
-    box-shadow: 1px 1px 1px #84817a;
-    border-width: 0.5px;
+    border: 0px;
+    border-radius: 25px;
     opacity: 1;
-    text-align: center;
-    padding: 6px 8px 0px 8px;
+    padding: 16px 30px 16px 30px;
     color: #fff;
+	background-color: #3f3f3f;
     text-decoration: none;
+	font-family: Montserrat;
 }
