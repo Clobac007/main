@@ -15,6 +15,7 @@ body {
 	padding: 50px 30px 250px 30px;
 	font-family: Cambay;
 	background-color: #181818;
+	background-image: url("pictures/bckb1.png");
 }
 
 nav a {
@@ -27,6 +28,7 @@ nav a {
 .hb1 {
 
     display: flex;
+	flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -41,8 +43,15 @@ nav a {
 
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+	font-size: 32px;
+	font-family: Montserrat;
+	font-weight: bold;
     color: #fff;
+}
+
+#logo p
+{
+	padding-top: 8px;
 }
 
 div#logo h1
@@ -57,6 +66,7 @@ nav ul {
 
     list-style-type : none;
     display: flex;
+	flex-flow: row wrap;
 	gap: 30px;
 	font-size: 20px;
 	font-family: Montserrat;
@@ -79,6 +89,8 @@ nav a:hover {
 
 .btn_jaune {
 
+	display: flex;
+	flex-flow: row wrap;
     border: 1px solid #f1c40f;
     border-radius: 18px;
     box-shadow: 1px 1px 1px #f1c40f;

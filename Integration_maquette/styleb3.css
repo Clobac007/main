@@ -57,14 +57,14 @@ button
 .exprj
 {
 	display: flex;
-	flex-direction: row wrap;
+	flex-flow: row wrap;
 }
 
 .prj1
 {
 	display: flex;
 	flex-flow: row wrap;
-	width: 960px;
+	width: 920px;
 	height: 788px;
 }
 
