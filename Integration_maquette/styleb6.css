@@ -24,7 +24,7 @@
 
 .info h2
 {
-	padding-bottom: 35px;
+	padding-bottom: 28px;
 }
 
 .info span
@@ -50,8 +50,8 @@ div.info h1
 
 div.info h2
 {
-	font-size: 28px;
-	font-family: "Arial Black";
+	font-family: Montserrat;
+	font-weight: bolder;
 }
 
 .contact
@@ -69,6 +69,8 @@ div.info h2
 .contact h2
 {
 	margin-bottom: 35px;
+	font-family: Montserrat;
+	font-weight: bolder;
 }
 
 form input

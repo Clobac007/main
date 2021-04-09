@@ -74,6 +74,7 @@ section.blog
 
 .gallery {
 
+	margin-top: 75px;
     background-image: url('pictures/p1b5gallery.png') ;
     background-size: 100%;
     padding-left: 75px;
