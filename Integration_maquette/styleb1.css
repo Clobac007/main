@@ -83,6 +83,7 @@ nav a {
 nav a:hover {
 
     color: #84817a;
+	font-size: 20px;
 }
 
 /* Bouton buy */ 
@@ -101,6 +102,14 @@ nav a:hover {
     text-decoration: none;
 	font-family: Montserrat;
 	font-weight: bold;
+	transition-duration: 0.8s;
+}
+
+.btn_jaune:hover
+{
+	color: #f1c40f;
+	background: #000000;
+	transition-duration: 0.4s;
 }
 
 /* Corps */
@@ -160,4 +169,14 @@ p#prgh {
 	background-color: #3f3f3f;
     text-decoration: none;
 	font-family: Montserrat;
+	transition-duration: 0.8s;
+}
+
+.btn_about:hover
+{
+	color: #ffffff;
+	background: #000000;
+	border: solid 2px;
+	border-color: #3f3f3f;
+	transition-duration: 0.4s;
 }
