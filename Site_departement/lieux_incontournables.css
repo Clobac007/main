@@ -55,6 +55,14 @@ body
 	border: 0px;
 	border-radius: 15px;
 	opacity: 75%;
+	outline: none;
+}
+
+.nav button:hover
+{
+	color: #000000;
+	border: solid 3px;
+	border-color: #000000;
 }
 
 .subtitle
@@ -121,7 +129,7 @@ body
 
 #pctr3
 {
-	background-image: url("hight_place/jardin_plantes.jpg");
+	background-image: url("hight_place/Source-du-Loiret.jpg");
 	background-size: cover;
 }
 

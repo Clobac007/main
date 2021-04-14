@@ -56,6 +56,14 @@ body
 	border: 0px;
 	border-radius: 15px;
 	opacity: 75%;
+	outline: none;
+}
+
+.nav button:hover
+{
+	color: #000000;
+	border: solid 3px;
+	border-color: #000000;
 }
 
 .title1
