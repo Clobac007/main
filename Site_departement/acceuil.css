@@ -11,12 +11,17 @@ body
 {
 	font-family: Cambay;
 	color: #ffffff;
+	scroll-behavior: smooth;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
 }
 
 .title 
 {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .title p
@@ -26,6 +31,14 @@ body
 	background-color: #ffffff;
 	padding: 20px;
 	border-radius: 25px;
+}
+
+.title span.logo
+{
+	background-color: #ffffff;
+	border-radius: 0px 25px 25px 0px;
+	padding-top: 10px;
+	padding-right: 10px;
 }
 
 .title #name
@@ -56,13 +69,31 @@ body
 	border-radius: 15px;
 	opacity: 75%;
 	outline: none;
+	transition-duration: 0.5s;
 }
+
+/* .nav button #hide
+{
+	display: none;
+}
+
+.nav button:hover #hide
+{
+	opacity: 75%;
+	display: inherit;
+}
+
+.nav button:hover #base
+{
+	display: none;
+} */
 
 .nav button:hover
 {
 	color: #000000;
 	border: solid 3px;
 	border-color: #000000;
+	transition-duration: 0.2s;
 }
 
 .intro
@@ -73,7 +104,9 @@ body
 	align-items: center;
 	margin-top: 35px;
 	margin-bottom: 35px;
-	gap: 43px;
+	background-image: url("pictures/chateau_parcflo.jpg");
+	background-size: cover;
+	width: 100%;
 }
 
 #chateau_sc
@@ -88,6 +121,7 @@ body
 	flex-direction: row;
 	align-items: center;
 	gap: 50px;
+
 }
 
 #chateau_bell
@@ -113,7 +147,7 @@ body
 
 .footer
 {
-	background-image: url("pictures/chateau_parcfloral.jpg");
+	background-image: url("pictures/jardin_parcflo.jpg");
 	background-size: cover;
 	width: 100%;
 	height: 472px;

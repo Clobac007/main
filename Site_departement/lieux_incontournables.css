@@ -11,12 +11,16 @@ body
 {
 	font-family: Cambay;
 	color: #ffffff;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
 }
 
 .title 
 {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .title p
@@ -26,6 +30,14 @@ body
 	background-color: #ffffff;
 	padding: 20px;
 	border-radius: 25px;
+}
+
+.title span.logo
+{
+	background-color: #ffffff;
+	border-radius: 0px 25px 25px 0px;
+	padding-top: 10px;
+	padding-right: 10px;
 }
 
 .title #name
@@ -56,6 +68,7 @@ body
 	border-radius: 15px;
 	opacity: 75%;
 	outline: none;
+	transition-duration: 0.5s;
 }
 
 .nav button:hover
@@ -63,6 +76,7 @@ body
 	color: #000000;
 	border: solid 3px;
 	border-color: #000000;
+	transition-duration: 0.2s;
 }
 
 .subtitle
@@ -71,6 +85,8 @@ body
 	color: #ffffff;
 	text-align: center;
 	font-size: 34px;
+	margin-top: 35px;
+	margin-bottom: 35px;
 }
 
 .pictures
@@ -91,6 +107,14 @@ body
 {
 	height: 400px;
 	width: 600px;
+	transition-duration: 0.5s;
+}
+
+.pictures div:hover
+{
+	height: 500px;
+	width: 700px;
+	transition-duration: 0.5s;
 }
 
 #pctr1 p, #pctr3 p, #pctr5 p, #pctr7 p, #pctr9 p
@@ -159,25 +183,25 @@ body
 
 #pctr8
 {
-	background-image: url("hight_place/Maison_de_Loire_du_Loiret.jpg");
+	background-image: url("hight_place/oratoire_germiny.jpg");
 	background-size: cover;
 }
 
 #pctr9
 {
-	background-image: url("hight_place/chateau_ferté.jpg");
+	background-image: url("hight_place/chateau_sully.jpg");
 	background-size: cover;
 }
 
 #pctra
 {
-	background-image: url("hight_place/chateau_muguet.jpg");
+	background-image: url("hight_place/pont_canal_briare.jpg");
 	background-size: cover;
 }
 
 .footer
 {
-	background-image: url("pictures/chateau_parcfloral.jpg");
+	background-image: url("pictures/jardin_parcflo.jpg");
 	background-size: cover;
 	width: 100%;
 	height: 472px;
