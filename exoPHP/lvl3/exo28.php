@@ -37,52 +37,61 @@ $animaux = [
     <br>
     <br>
     <?php
+		function displayall($animaux)
+		{
+			foreach ($animaux as $box)
+			{
+				$tbox = "a";
+				foreach ($box as $type => $name)
+				{
+					if ($type == "type" && $name == "chien")
+						$tbox = "chien";
+					if ($type == "type" && $name == "chat")
+						$tbox = "chat";
+					if ($type != "type")
+						echo $name . " est un " . $tbox . "</br>";
+				}
+			}
+		}
+
+		function displaydog($animaux)
+		{
+			foreach ($animaux as $box)
+			{
+				$test = 0;
+				foreach ($box as $type => $name)
+				{
+					if ($type == "type" && $name == "chien")
+						$test = 1;
+					if ($test == 1 && $type == "nom")
+						echo $name . " est un chien </br>";
+				}
+			}
+		}
+
+		function displaycat($animaux)
+		{
+			foreach ($animaux as $box)
+			{
+				$test = 0;
+				foreach ($box as $type => $name)
+				{
+					if ($type == "type" && $name == "chat")
+						$test = 1;
+					if ($test == 1 && $type == "nom")
+						echo $name . " est un chat </br>";
+				}
+			}
+		}
+
 		if (!empty($_GET['anim']))
 		{
 			if ($_GET['anim'] == "tous")
-			{
-				foreach ($animaux as $box)
-				{
-					$tbox = "a";
-					foreach ($box as $type => $name)
-					{
-						if ($type == "type" && $name == "chien")
-							$tbox = "chien";
-						if ($type == "type" && $name == "chat")
-							$tbox = "chat";
-						if ($type != "type")
-							echo $name . " est un " . $tbox . "</br>";
-					}
-				}
-			}
+				displayall($animaux);
 			if ($_GET['anim'] == "chien")
-			{
-				foreach ($animaux as $box)
-				{
-					$test = 0;
-					foreach ($box as $type => $name)
-					{
-						if ($type == "type" && $name == "chien")
-							$test = 1;
-						if ($test == 1 && $type == "nom")
-							echo $name . " est un chien </br>";
-					}
-				}
-			}
+				displaydog($animaux);
 			if ($_GET['anim'] == "chats")
-			{
-				foreach ($animaux as $box)
-				{
-					$test = 0;
-					foreach ($box as $type => $name)
-					{
-						if ($type == "type" && $name == "chat")
-							$test = 1;
-						if ($test == 1 && $type == "nom")
-							echo $name . " est un chat </br>";
-					}
-				}
-			}
+				displaycat($animaux);
 		}
     ?>
 </body>
