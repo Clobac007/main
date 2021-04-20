@@ -13,6 +13,11 @@ body
 	margin: 0px;
 }
 
+.header
+{
+	height: 210px;
+}
+
 .fest
 {
 	font-family: Cambay;
@@ -79,9 +84,10 @@ body
 
 .nav button:hover
 {
-	color: #000000;
+	color: #4E7FFF;
 	border: solid 3px;
-	border-color: #000000;
+	border-color: #4E7FFF;
+	background: #ffffff;
 	transition-duration: 0.2s;
 }
 
@@ -93,6 +99,7 @@ body
 	color: #ffffff;
 	margin-top: 50px;
 	margin-bottom: 50px;
+	height: 150px;
 }
 
 .title1 p
@@ -119,11 +126,28 @@ body
 }
 
 .resum div.corpus
-{
+{		
 	background: #4E7FFF;
-	border-radius: 0px 25px 25px 0px;
+	border-radius: 0px 25px 25px 0px;		
 	padding-left: 15px;
-	padding-right: 15px;
+	padding-right: 15px;	
+}
+
+
+@media (max-width: 1199px)
+{
+	.resum div.corpus
+	{
+		background: #4E7FFF;
+		border-radius: 0px 0px 25px 25px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.resum img
+	{
+		width: 598px;
+	}
 }
 
 .resum div p
@@ -185,6 +209,15 @@ body
 	font-size: 30px;
 }
 
+@media (max-width: 839px)
+{
+	.night_fest img
+	{
+		width: 440px;
+		height: 495px;
+	}
+}
+
 .end
 {
 	display: flex;
@@ -207,6 +240,34 @@ body
 {
 	text-align: right;
 	font-size: 18px;
+}
+
+@media (max-width: 879px)
+{
+	.end
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.end div
+	{
+		background: #4E7FFF;
+		border-radius: 25px 25px 0px 0px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.end div p
+	{
+		text-align: center;
+		font-size: 18px;
+	}
+
+	.end img
+	{
+		width: 279px;
+	}
 }
 
 .end div span
