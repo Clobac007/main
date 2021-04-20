@@ -21,6 +21,11 @@ body
 	justify-content: center;
 }
 
+.header
+{
+	height: 210px;
+}
+
 .title 
 {
 	display: flex;
@@ -78,9 +83,10 @@ body
 
 .nav button:hover
 {
-	color: #000000;
+	color: #4E7FFF;
 	border: solid 3px;
-	border-color: #000000;
+	border-color: #4E7FFF;
+	background: #ffffff;
 	transition-duration: 0.2s;
 }
 
@@ -96,12 +102,6 @@ body
 	background-size: cover;
 }
 
-#chateau_sc
-{
-	grid-row: 1;
-	grid-column: 1;
-}
-
 .desc
 {
 	display: flex;
@@ -109,12 +109,6 @@ body
 	align-items: center;
 	gap: 50px;
 
-}
-
-#chateau_bell
-{
-	grid-row: 1;
-	grid-column: 3;
 }
 
 .desc div div
