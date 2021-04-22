@@ -1,0 +1,28 @@
+section
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 250px;
+}
+
+h1
+{
+	display: flex;
+	justify-content: center;
+	margin: 50px;
+}
+
+.third form
+{
+	display: flex;
+	flex-direction: row;
+	gap: 3px;
+}
+
+a
+{
+	position: fixed;
+	top: 15px;
+	left: 15px;
+}
