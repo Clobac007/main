@@ -1,130 +1,43 @@
 <?php
-	if(isset($_POST['1']))
+	function calc($n)
 	{
-		for ($i = 1; $i < 41; $i++)
+		for ($i = 1; $i < 11; $i++)
 		{
 			if ($i < 10)
 				echo "x0";
 			else
 				echo "x";
-			echo $i . "------" . $i * 1 . "</br>";
+			echo $i . "------" . $i * $n . "</br>";
 		}
 		echo "</br>";
 	}
+
+	if(isset($_POST['1']))
+		calc(1);
 
 	if(isset($_POST['2']))
-	{
-		for ($i = 1; $i < 41; $i++)
-		{
-			if ($i < 10)
-				echo "x0";
-			else
-				echo "x";
-			echo $i . "------" . $i * 2 . "</br>";
-		}
-		echo "</br>";
-	}
+		calc(2);
 
 	if(isset($_POST['3']))
-	{
-		for ($i = 1; $i < 41; $i++)
-		{
-			if ($i < 10)
-				echo "x0";
-			else
-				echo "x";
-			echo $i . "------" . $i * 2 . "</br>";
-		}
-		echo "</br>";
-	}
+		calc(3);
 
 	if(isset($_POST['4']))
-	{
-		for ($i = 1; $i < 41; $i++)
-		{
-			if ($i < 10)
-				echo "x0";
-			else
-				echo "x";
-			echo $i . "------" . $i * 4 . "</br>";
-		}
-		echo "</br>";
-	}
+		calc(4);
 
 	if(isset($_POST['5']))
-	{
-		for ($i = 1; $i < 41; $i++)
-		{
-			if ($i < 10)
-				echo "x0";
-			else
-				echo "x";
-			echo $i . "------" . $i * 5 . "</br>";
-		}
-		echo "</br>";
-	}
+		calc(5);
 
 	if(isset($_POST['6']))
-	{
-		for ($i = 1; $i < 41; $i++)
-		{
-			if ($i < 10)
-				echo "x0";
-			else
-				echo "x";
-			echo $i . "------" . $i * 6 . "</br>";
-		}
-		echo "</br>";
-	}
+		calc(6);
 
 	if(isset($_POST['7']))
-	{
-		for ($i = 1; $i < 41; $i++)
-		{
-			if ($i < 10)
-				echo "x0";
-			else
-				echo "x";
-			echo $i . "------" . $i * 7 . "</br>";
-		}
-		echo "</br>";
-	}
+		calc(7);
 
 	if(isset($_POST['8']))
-	{
-		for ($i = 1; $i < 41; $i++)
-		{
-			if ($i < 10)
-				echo "x0";
-			else
-				echo "x";
-			echo $i . "------" . $i * 8 . "</br>";
-		}
-		echo "</br>";
-	}
+		calc(8);
 
 	if(isset($_POST['9']))
-	{
-		for ($i = 1; $i < 41; $i++)
-		{
-			if ($i < 10)
-				echo "x0";
-			else
-				echo "x";
-			echo $i . "------" . $i * 9 . "</br>";
-		}
-		echo "</br>";
-	}
+		calc(9);
 
 	if(isset($_POST['10']))
-	{
-		for ($i = 1; $i < 41; $i++)
-		{
-			if ($i < 10)
-				echo "x0";
-			else
-				echo "x";
-			echo $i . "------" . $i * 10 . "</br>";
-		}
-		echo "</br>";
-	}
+		calc(10);
