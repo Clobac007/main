@@ -5,7 +5,7 @@ body
 	font-family: Arial;
 	font-size: 20px;
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
 	text-align: center;
 	justify-content: space-evenly;
 }
@@ -17,14 +17,9 @@ div
 }
 
 
-div.six, div.eight
+div.six
 {
 	border: 0px;
-}
-
-div.first, div.second, div.third, div.four, div.five
-{
-	border-right: 0px;
 }
 
 h1

@@ -91,9 +91,47 @@
 		?>
 	</div>
 	<div class="eight">
+		<h1>Ages des utilisateurs</h1>
 		<?php
-			// UPDATE users SET birth_date = REPLACE (birth_date, '/', '-')
+			$query81 = $pdo->query("SELECT first_name, last_name, ROUND(DATEDIFF('2021-04-27', STR_TO_DATE(birth_date, '%d/%m/%Y'))/365) AS 'age' FROM users");
+			$resultat81 = $query81->fetchAll();
+			foreach($resultat81 as $key81 => $value81)
+			{
+				echo $value81["first_name"] . " " . $value81["last_name"] . " " . $value81["age"] . "</br>";
+			}
+			echo "</br>";
 		?>
 	</div>
+	<div class="eightone">
+		<h1>Age moyen</h1>
+		<?php
+			$query82 = $pdo->query("SELECT ROUND(SUM(ROUND(DATEDIFF('2021-04-27', STR_TO_DATE(birth_date, '%d/%m/%Y'))/365))/1000) AS 'agem' FROM users");
+			$resultat82 = $query82->fetchAll();
+			foreach($resultat82 as $key82 => $value82)
+			{
+				echo $value82["agem"] . "</br>";
+			}
+			echo "</br>";
+		?>
+		<h1>Age moyen femme</h1>
+		<?php
+			$query83 = $pdo->query("SELECT ROUND(SUM(ROUND(DATEDIFF('2021-04-27', STR_TO_DATE(birth_date, '%d/%m/%Y'))/365))/478) AS 'agemf' FROM users WHERE gender='Female'");
+			$resultat83 = $query83->fetchAll();
+			foreach($resultat83 as $key83 => $value83)
+			{
+				echo $value83["agemf"] . "</br>";
+			}
+			echo "</br>";
+		?>
+		<h1>Age moyen homme</h1>
+		<?php
+			$query84 = $pdo->query("SELECT ROUND(SUM(ROUND(DATEDIFF('2021-04-27', STR_TO_DATE(birth_date, '%d/%m/%Y'))/365))/522) AS 'agemh' FROM users WHERE gender='Male'");
+			$resultat84 = $query84->fetchAll();
+			foreach($resultat84 as $key84 => $value84)
+			{
+				echo $value84["agemh"] . "</br>";
+			}
+			echo "</br>";
+		?>
 	</body>
 </html>
