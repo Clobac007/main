@@ -1,0 +1,33 @@
+body
+{
+	background: #101010;
+	color: #dadada;
+	font-family: Arial;
+	font-size: 20px;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-evenly;
+}
+
+div
+{
+	border: solid;
+	border-color: #dadada;
+}
+
+
+div.six, div.eight
+{
+	border: 0px;
+}
+
+div.first, div.second, div.third, div.four, div.five
+{
+	border-right: 0px;
+}
+
+h1
+{
+	font-size: 24px;
+}
