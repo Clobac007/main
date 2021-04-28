@@ -91,10 +91,8 @@ th#full
 
 button
 {
-	border: solid 2px;
-	border-color: #252525;
 	border-radius: 10px;
-	background: #656565;
+	background: #a0a0a0;
 	padding: 15px;
 	font-size: 20px;
 }
