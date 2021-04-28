@@ -13,3 +13,4 @@ if (!empty($_POST))
 			'".$_POST["place_ch"]."', '".$_POST["price_ch"]."')");
 	}
 }
+?>
