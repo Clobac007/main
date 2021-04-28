@@ -14,19 +14,10 @@
 				<p>Liste des interventions</p>
 			</div>
 			<div class="list">
-				<table>
-					<?php include "list_fct.php" ?>
-
-
-
-
-
-
-
-
-
-
-				</table>
+				<form action="list.php" method="post">
+					<?php include "list_fct.php" ?>			
+					<input type="submit" value="Supprimer les cases cocher"/>
+				</form>	
 			</div>
 		</section>
 	</body>
