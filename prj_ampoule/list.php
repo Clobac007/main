@@ -13,12 +13,16 @@
 			<div class="title">
 				<p>Liste des interventions</p>
 			</div>
+			<div class="nav">
+				<p><a href='index.php'>Vers le formulaire</a></p>
+			</div>
 			<div class="list">
 				<form action="list.php" method="post">
-					<?php include "list_fct.php" ?>			
-					<input type="submit" value="Supprimer les cases cocher"/>
+					<?php include "list_fct.php" ?>
 				</form>	
 			</div>
+			<div id="snackbar">Some text some message..</div>
 		</section>
 	</body>
+	<script src="snackbar.js"></script>
 </html>

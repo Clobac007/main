@@ -30,13 +30,15 @@
 						<input type="number" name="price_ch" placeholder="Prix" required/>
 					</div>
 					<div class="btn">
-						<button type="submit">Effectuer le changement</button>
+						<button id="add" name='add' onclick="myFunction()" type="submit">Effectuer le changement</button>
 					</div>
 				</form>
 			</div>
 			<div class="end">
 				<p><a href='list.php'>Vers l'historique</a></p>
 			</div>
+			<div id="snackbar">Some text some message..</div>
 		</section>
 	</body>
+	<script src="snackbar.js"></script>
 </html>

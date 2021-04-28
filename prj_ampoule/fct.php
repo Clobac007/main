@@ -2,7 +2,7 @@
 $dns = "mysql:host=localhost;dbname=prj_ampoule;charset=utf8";
 $pdo = new PDO($dns, "root", "");
 
-if (!empty($_POST))
+if (isset($_POST['add']))
 {
 	// $query1 = $pdo->query("SELECT id, datech, floorch, areach, pricech FROM info_chmg");
 	// $resultat1 = $query1->fetchAll();
