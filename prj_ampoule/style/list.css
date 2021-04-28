@@ -4,3 +4,154 @@ body
 	margin: 0px;
 }
 
+.history
+{
+	font-family: Arial;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+}
+
+.title
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+.title p
+{
+	background: #656565;
+	border-radius: 25px;
+	padding: 20px;
+	font-size: 28px;
+}
+
+.nav
+{
+	position: absolute;
+	left: 20px;
+	top: 35px;
+}
+
+.nav a
+{
+	text-decoration: none;
+	color: #000000;
+	background: #656565;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+form
+{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	text-align: center;
+	background: #656565;
+	margin-top: 20px;
+	padding-top: 45px;
+	padding-bottom: 30px;
+}
+
+table
+{
+	font-size: 20px;
+	vertical-align: middle;
+}
+
+th, td
+{
+	padding: 20px;
+	border: solid 2px;
+	border-color: #252525;
+}
+
+th
+{
+	background-color: #a0a0a0;
+}
+
+/* td
+{
+	border: dashed #252525;
+} */
+
+th#full
+{
+	background-color: #252525;
+}
+
+.btn
+{
+	margin-top: 25px;
+}
+
+button
+{
+	border: solid 2px;
+	border-color: #252525;
+	border-radius: 10px;
+	background: #656565;
+	padding: 15px;
+	font-size: 20px;
+}
+
+input[type='checkbox']
+{
+	transition-duration: 1.0s;
+}
+
+input[type='checkbox']:checked
+{
+	transform: scale(1.5);
+	transition-duration: 1.0s;
+}
+
+/* Style du message temporaire */
+#snackbar {
+	visibility: hidden; /* Hidden by default. Visible on click */
+	min-width: 250px; /* Set a default minimum width */
+	margin-left: -125px; /* Divide value of min-width by 2 */
+	background-color: #333; /* Black background color */
+	color: #fff; /* White text color */
+	text-align: center; /* Centered text */
+	border-radius: 2px; /* Rounded borders */
+	padding: 16px; /* Padding */
+	position: fixed; /* Sit on top of the screen */
+	z-index: 1; /* Add a z-index if needed */
+	left: 50%; /* Center the snackbar */
+	bottom: 30px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+	visibility: visible; /* Show the snackbar */
+	/* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+	However, delay the fade out process for 2.5 seconds */
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+	from {bottom: 0; opacity: 0;}
+	to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+	from {bottom: 0; opacity: 0;}
+	to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+	from {bottom: 30px; opacity: 1;}
+	to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+	from {bottom: 30px; opacity: 1;}
+	to {bottom: 0; opacity: 0;}
+  }
