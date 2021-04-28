@@ -21,7 +21,7 @@
 					<?php include "list_fct.php" ?>
 				</form>	
 			</div>
-			<div id="snackbar">Some text some message..</div>
+			<div id="snackbar">Suppression...</div>
 		</section>
 	</body>
 	<script src="snackbar.js"></script>
