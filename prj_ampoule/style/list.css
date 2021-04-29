@@ -44,7 +44,7 @@ body
 	border-radius: 15px;
 }
 
-form
+.list form
 {
 	display: flex;
 	flex-flow: column wrap;
@@ -89,7 +89,7 @@ th#full
 	margin-top: 25px;
 }
 
-button
+#del, #mod_btn_open
 {
 	border-radius: 10px;
 	background: #a0a0a0;
@@ -107,6 +107,50 @@ input[type='checkbox']:checked
 	transform: scale(1.5);
 	transition-duration: 1.0s;
 }
+
+div.modal
+{
+	display: none;
+	position: fixed;
+	padding: 50px;
+	top: 30%;
+	left: 45%;
+	background: #656565;
+	border: solid 6px;
+	border-color: #252525;
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}
+
+div.modal_content
+{
+	position: relative;
+	padding: 20px;
+	background: #656565;
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}
+
+.close-btn
+{
+	color: #a0a0a0; 
+	font-size: 24px;  
+	font-weight: bold;
+}
+
+@-webkit-keyframes animatetop {
+	from {top:-300px; opacity:0} 
+	to {top:30%; opacity:1}
+  }
+
+  @keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top:30%; opacity:1}
+  }
 
 /* Style du message temporaire */
 #snackbar {
