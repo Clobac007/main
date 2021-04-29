@@ -20,12 +20,13 @@ function display($resultat1)
 			echo "<td>" . $value["colonne4"] . "</td>";
 			echo "<td>" . $value["colonne5"] . " €" . "</td>";
 			echo "<td><input type='checkbox' id='".$value["id"]."' name='".$value["id"]."'" . "</td>";
-			echo "<td><button type='submit' name='".$value["id"]."'/> Modifier </button>";
+			echo "<td><button onclick='add_mod()' type='button' id='mod_btn_open'>Modifier </button>";
 			echo "</tr>";
 		}
 		echo "</table>";
 		echo "<div class='btn'>";
-		echo "<button onclick='myFunction()' id='del' type='submit' name='dellete'>Supprimer les cases cocher</button>";
+		echo "<button onclick='myFunction()' type='submit' id='del' name='del'>Supprimer les cases cocher</button>";
+		echo "</div>";
 	}
 	else
 	{
@@ -37,7 +38,7 @@ $dns = "mysql:host=localhost;dbname=prj_ampoule;charset=utf8";
 $pdo = new PDO($dns, "root", "");
 $query1 = $pdo->query("SELECT id, colonne2, colonne3, colonne4, colonne5 FROM test ORDER BY colonne2");
 $resultat1 = $query1->fetchAll();
-if (isset($_POST['dellete']))
+if (isset($_POST['del']))
 {
 	foreach($_POST as $keys => $values)
 	{

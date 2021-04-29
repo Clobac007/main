@@ -4,8 +4,6 @@ $pdo = new PDO($dns, "root", "");
 
 if (isset($_POST['add']))
 {
-	// $query1 = $pdo->query("SELECT id, datech, floorch, areach, pricech FROM info_chmg");
-	// $resultat1 = $query1->fetchAll();
 	if(!empty($_POST["date_ch"]) && !empty($_POST["floor_ch"]) && !empty($_POST["place_ch"])
 		&& !empty($_POST["price_ch"]))
 	{

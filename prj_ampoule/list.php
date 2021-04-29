@@ -23,6 +23,14 @@
 			</div>
 			<div id="snackbar">Suppression...</div>
 		</section>
+			<div class="modal">
+    			<div class="modal_content">
+      				<div class="container">
+						<span class="mod_close_btn">&times;</span>
+						<p>text</p>
+					</div>
+    			</div>
+			</div>
+		<script src="script.js"></script>
 	</body>
-	<script src="snackbar.js"></script>
 </html>
