@@ -1,6 +1,6 @@
 body
 {
-	background: #252525;
+	background: #0a0a0a;
 	margin: 0px;
 }
 
@@ -28,6 +28,14 @@ body
 	font-size: 28px;
 }
 
+@media (max-width:320px)
+{
+	.title p
+	{
+		height: 30px;
+	}
+}
+
 .nav
 {
 	position: absolute;
@@ -35,13 +43,49 @@ body
 	top: 35px;
 }
 
+@media (max-width:650px)
+{
+	.nav
+	{
+		top: 95px;
+	}
+}
+
+.nav p
+{
+	background: #606060;
+	margin: 15px;
+	padding: 5px;
+	border-radius: 10px;
+	border: solid 4px;
+	border-color: #606060;
+	right: 0px;
+	bottom: 0px;
+	font-size: 20px;
+	text-align: center;
+	transition-duration: 0.2s;
+}
+
+.nav p:hover
+{
+	background: #d0d0d0;
+	transition-duration: 0.2s;
+}
+
 .nav a
 {
 	text-decoration: none;
 	color: #000000;
-	background: #656565;
 	padding: 10px;
 	border-radius: 15px;
+}
+
+.list
+{
+	background: #202020;
+	margin-top: 20px;
+	padding-top: 45px;
+	padding-bottom: 30px;
 }
 
 .list form
@@ -50,10 +94,6 @@ body
 	flex-flow: column wrap;
 	justify-content: center;
 	text-align: center;
-	background: #656565;
-	margin-top: 20px;
-	padding-top: 45px;
-	padding-bottom: 30px;
 }
 
 table
@@ -62,16 +102,19 @@ table
 	vertical-align: middle;
 }
 
-th, td
+td
 {
 	padding: 20px;
 	border: solid 2px;
-	border-color: #252525;
+	border-color: #606060;
+	color: #d0d0d0;
+	transition-duration: 0.2s;
 }
 
-th
+td#col
 {
-	background-color: #a0a0a0;
+	background-color: #606060;
+	color: #000000;
 }
 
 /* td
@@ -81,7 +124,7 @@ th
 
 th#full
 {
-	background-color: #252525;
+	background-color: #0a0a0a;
 }
 
 .btn
@@ -89,12 +132,36 @@ th#full
 	margin-top: 25px;
 }
 
+.btn button
+{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
 #del, #mod_btn_open
 {
 	border-radius: 10px;
-	background: #a0a0a0;
+	background: #606060;
+	border: solid 4px;
+	border-color: #606060;
 	padding: 15px;
 	font-size: 20px;
+	transition-duration: 0.2s;
+}
+
+@media (max-width: 625px)
+{
+	#del, #mod_btn_open
+	{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+#del:hover, #mod_btn_open:hover
+{
+	background: #d0d0d0;
+	transition-duration: 0.2s;
 }
 
 input[type='checkbox']
@@ -112,9 +179,9 @@ div.modal
 {
 	display: none;
 	position: fixed;
-	padding: 50px;
-	top: 30%;
-	left: 45%;
+	padding: 30px;
+	top: 20%;
+	left: 100px;
 	background: #656565;
 	border: solid 6px;
 	border-color: #252525;
@@ -124,32 +191,89 @@ div.modal
 	animation-duration: 0.4s
 }
 
+@media (max-width:600px)
+{
+	div.modal
+	{
+		left: 30px;
+	}
+}
+
 div.modal_content
 {
 	position: relative;
-	padding: 20px;
 	background: #656565;
+	padding: 0px;
 	-webkit-animation-name: animatetop;
 	-webkit-animation-duration: 0.4s;
 	animation-name: animatetop;
 	animation-duration: 0.4s
 }
 
-.close-btn
+div.modal_container form
 {
-	color: #a0a0a0; 
-	font-size: 24px;  
-	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial;
+	font-size: 18px;
+}
+
+div.modal_container form div input
+{
+	width: 200px;
+	height: 20px;
+	background-color: #a0a0a0;
+	border-radius: 10px;
+	font-family: Arial;
+	font-size: 18px;
+}
+
+div.modal_container form div select
+{
+	background-color: #a0a0a0;
+	border: solid 3px;
+	border-color: #252525;
+	font-family: Arial;
+	font-size: 18px;
+}
+
+#return, #change
+{
+	background: #a0a0a0;
+	border-radius: 10px;
+	font-size: 20px;
+	padding: 8px;
+}
+
+div.filter button
+{
+	font-size: 18px;
+	background: #606060;
+	border-radius: 5px;
+	border: solid 2px;
+	border-color: #606060;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	transition-duration: 0.2s;
+}
+
+div.filter button:hover
+{
+	background: #d0d0d0;
+	transition-duration: 0.2s;
 }
 
 @-webkit-keyframes animatetop {
 	from {top:-300px; opacity:0} 
-	to {top:30%; opacity:1}
+	to {top:20%; opacity:1}
   }
 
   @keyframes animatetop {
 	from {top:-300px; opacity:0}
-	to {top:30%; opacity:1}
+	to {top:20%; opacity:1}
   }
 
 /* Style du message temporaire */
