@@ -17,17 +17,18 @@
 			</div>
 			<div class="form">
 				<form action="index.php" method="post">
+					<p>Renseignez chaque champ pour enregistrer une intervention</p>
 					<div>
-						<input type="date" name="date_ch" required/>
+						<input type="date" name="date" required/>
 					</div>
 					<div>
-						<input type="number" name="floor_ch" placeholder="Etage" required/>
+						<input type="number" name="floor" placeholder="Etage" min="0" max="11" required/>
 					</div>
 					<div>
-						<input type="text" name="place_ch" placeholder="Position" required/>
+						<input type="text" name="place" placeholder="Position" required/>
 					</div>
 					<div>
-						<input type="number" name="price_ch" placeholder="Prix" required/>
+						<input type="number" name="price" placeholder="Prix" min="0" required/>
 					</div>
 					<div class="btn">
 						<button id="add" name='add' onclick="myFunction()" type="submit">Enregistrer le changement</button>
@@ -40,5 +41,5 @@
 			<div id="snackbar">Ajout...</div>
 		</section>
 	</body>
-	<script src="snackbar.js"></script>
+	<script src="script.js"></script>
 </html>

@@ -4,11 +4,11 @@ $pdo = new PDO($dns, "root", "");
 
 if (isset($_POST['add']))
 {
-	if(!empty($_POST["date_ch"]) && !empty($_POST["floor_ch"]) && !empty($_POST["place_ch"])
-		&& !empty($_POST["price_ch"]))
+	if(!empty($_POST["date"]) && !empty($_POST["floor"]) && !empty($_POST["place"])
+		&& !empty($_POST["price"]))
 	{
-		$pdo->query("INSERT INTO test VALUES (DEFAULT, STR_TO_DATE('".$_POST["date_ch"]."', '%Y-%m-%d'), '".$_POST["floor_ch"]."',
-			'".$_POST["place_ch"]."', '".$_POST["price_ch"]."')");
+		$pdo->query("INSERT INTO test VALUES (DEFAULT, STR_TO_DATE('".$_POST["date"]."', '%Y-%m-%d'), '".$_POST["floor"]."',
+			'".$_POST["place"]."', '".$_POST["price"]."')");
 	}
 }
 ?>

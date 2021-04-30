@@ -23,14 +23,35 @@
 			</div>
 			<div id="snackbar">Suppression...</div>
 		</section>
-			<div class="modal">
-    			<div class="modal_content">
-      				<div class="container">
-						<span class="mod_close_btn">&times;</span>
-						<p>text</p>
-					</div>
-    			</div>
-			</div>
+		<div class="modal">
+    		<div class="modal_content">
+      			<div class="modal_container">
+					<form action="list.php" method="post">
+						<p>Séléctionner une intervention à modifier:</p>
+						<div>	
+							<?php include "list_select.php" ?>
+						</div>
+						<p>Renseigner les champs nécessaires</p>
+						<div>
+							<input type="date" name="date_ch"/>
+						</div>
+						<div>
+							<input type="number" name="floor_ch" placeholder="Etage" min="0" max="11"/>
+						</div>
+						<div>
+							<input type="text" name="place_ch" placeholder="Position"/>
+						</div>
+						<div>
+							<input type="number" name="price_ch" placeholder="Prix" min="0"/>
+						</div>
+						<div class="btn">
+							<button class="mod_btn_close" id="return" name='return' type="button">Retour</button>
+							<button id="change" name='change' type="submit">Enregistrer le changement</button>
+						</div>
+					</form>
+				</div>
+    		</div>
+		</div>
 		<script src="script.js"></script>
 	</body>
 </html>
