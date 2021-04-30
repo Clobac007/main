@@ -14,12 +14,12 @@ function add_mod()
 	let modal = document.querySelector(".modal");
 	let bck = document.querySelector(".history");
 	modal.style.display = "block";
-	bck.style.filter = "brightness(0.2)";
+	bck.style.filter = "brightness(0.1)";
 }
 
 let bck = document.querySelector(".history");
 let modal = document.querySelector(".modal");
-let closeBtn = document.querySelector(".mod_close_btn");
+let closeBtn = document.querySelector(".mod_btn_close");
 closeBtn.onclick = function(){
 	modal.style.display = "none";
 	bck.style.filter = "brightness(1)";
