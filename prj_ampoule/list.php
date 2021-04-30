@@ -42,7 +42,7 @@
 							<input type="text" name="place_ch" placeholder="Position"/>
 						</div>
 						<div>
-							<input type="number" name="price_ch" placeholder="Prix" min="0"/>
+							<input type="number" name="price_ch" placeholder="Prix" step="0.01" min="0"/>
 						</div>
 						<div class="btn">
 							<button class="mod_btn_close" id="return" name='return' type="button">Retour</button>

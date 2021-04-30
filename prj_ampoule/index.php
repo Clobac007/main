@@ -28,7 +28,7 @@
 						<input type="text" name="place" placeholder="Position" required/>
 					</div>
 					<div>
-						<input type="number" name="price" placeholder="Prix" min="0" required/>
+						<input type="number" name="price" placeholder="Prix" step="0.01" min="0" required/>
 					</div>
 					<div class="btn">
 						<button id="add" name='add' onclick="myFunction()" type="submit">Enregistrer le changement</button>
